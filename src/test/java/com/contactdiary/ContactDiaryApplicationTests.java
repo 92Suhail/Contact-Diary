@@ -1,0 +1,13 @@
+package com.contactdiary;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ContactDiaryApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
