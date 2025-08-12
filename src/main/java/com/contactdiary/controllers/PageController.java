@@ -7,11 +7,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-// import com.scm.entities.User;
-// import com.scm.forms.UserForm;
-// import com.scm.helpers.Message;
-// import com.scm.helpers.MessageType;
-// import com.scm.services.UserService;
+import com.contactdiary.entites.User;
+import com.contactdiary.forms.UserForm;
+import com.contactdiary.helpers.Message;
+import com.contactdiary.helpers.MessageType;
+import com.contactdiary.services.UserService;
+
 
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
@@ -22,13 +23,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 @Controller
 public class PageController {
 
-    // @Autowired
-    // private UserService userService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/")
     public String index() {
         return "redirect:/home";
     }
+
 
     @RequestMapping("/home")
     public String home(Model model) {
@@ -70,33 +72,33 @@ public class PageController {
         return new String("login");
     }
 
-    // // registration page
-    // @GetMapping("/register")
-    // public String register(Model model) {
+    // registration page
+    @GetMapping("/register")
+    public String register(Model model) {
 
-    //     UserForm userForm = new UserForm();
-    //     // default data bhi daal sakte hai
-    //     // userForm.setName("Durgesh");
-    //     // userForm.setAbout("This is about : Write something about yourself");
-    //     model.addAttribute("userForm", userForm);
+        UserForm userForm = new UserForm();
+        // default data bhi daal sakte hai
+        // userForm.setName("Suhail");
+        // userForm.setAbout("This is about : Write something about yourself");
+        model.addAttribute("userForm", userForm);
 
-    //     return "register";
-    // }
+        return "register";
+    }
 
     // processing register
 
-    // @RequestMapping(value = "/do-register", method = RequestMethod.POST)
-    // public String processRegister(@Valid @ModelAttribute UserForm userForm, BindingResult rBindingResult,
-    //         HttpSession session) {
-    //     System.out.println("Processing registration");
-    //     // fetch form data
-    //     // UserForm
-    //     System.out.println(userForm);
+    @RequestMapping(value = "/do-register", method = RequestMethod.POST)
+    public String processRegister(@Valid @ModelAttribute UserForm userForm, BindingResult rBindingResult,
+            HttpSession session) {
+        System.out.println("Processing registration");
+        // fetch form data
+        // UserForm
+        System.out.println(userForm);
 
-    //     // validate form data
-    //     if (rBindingResult.hasErrors()) {
-    //         return "register";
-    //     }
+        // validate form data
+        if (rBindingResult.hasErrors()) {
+            return "register";
+        }
 
         // TODO::Validate userForm[Next Video]
 
@@ -115,30 +117,30 @@ public class PageController {
         // "https://www.learncodewithdurgesh.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75")
         // .build();
 
-        // User user = new User();
-        // user.setName(userForm.getName());
-        // user.setEmail(userForm.getEmail());
-        // user.setPassword(userForm.getPassword());
-        // user.setAbout(userForm.getAbout());
-        // user.setPhoneNumber(userForm.getPhoneNumber());
-        // user.setEnabled(false);
-        // user.setProfilePic(
-        //         "https://www.learncodewithdurgesh.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75");
+        User user = new User();
+        user.setName(userForm.getName());
+        user.setEmail(userForm.getEmail());
+        user.setPassword(userForm.getPassword());
+        user.setAbout(userForm.getAbout());
+        user.setPhoneNumber(userForm.getPhoneNumber());
+        user.setEnabled(false);
+        user.setProfilePic(
+                "https://www.learncodewithdurgesh.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdurgesh_sir.35c6cb78.webp&w=1920&q=75");
 
-        // User savedUser = userService.saveUser(user);
+        User savedUser = userService.saveUser(user);
 
-        // System.out.println("user saved :");
+        System.out.println("user saved :");
 
         // message = "Registration Successful"
 
         // add the message:
 
-    //     Message message = Message.builder().content("Registration Successful").type(MessageType.green).build();
+        Message message = Message.builder().content("Registration Successful").type(MessageType.green).build();
 
-    //     session.setAttribute("message", message);
+        session.setAttribute("message", message);
 
-    //     // redirectto login page
-    //     return "redirect:/register";
-    // }
+        // redirectto login page
+        return "redirect:/register";
+    }
 
 }
