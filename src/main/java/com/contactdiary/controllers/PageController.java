@@ -13,7 +13,6 @@ import com.contactdiary.helpers.Message;
 import com.contactdiary.helpers.MessageType;
 import com.contactdiary.services.UserService;
 
-
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
@@ -31,14 +30,13 @@ public class PageController {
         return "redirect:/home";
     }
 
-
     @RequestMapping("/home")
     public String home(Model model) {
         System.out.println("Home page handler");
         // sending data to view
-        model.addAttribute("name", "Spring Boot Technologies");
-        model.addAttribute("youtubeChannel", "SuhailRaza92");
-        model.addAttribute("githubRepo", "https://github.com/92Suhail/Contact-Diary.git");
+        model.addAttribute("name", "Substring Technologies");
+        model.addAttribute("youtubeChannel", "Learn Code With Durgesh");
+        model.addAttribute("githubRepo", "https://github.com/learncodewithdurgesh/");
         return "home";
     }
 
@@ -78,7 +76,7 @@ public class PageController {
 
         UserForm userForm = new UserForm();
         // default data bhi daal sakte hai
-        // userForm.setName("Suhail");
+        // userForm.setName("Durgesh");
         // userForm.setAbout("This is about : Write something about yourself");
         model.addAttribute("userForm", userForm);
 

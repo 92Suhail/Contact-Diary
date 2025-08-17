@@ -18,7 +18,7 @@
         <div data-th-replace="~{user/sidebar :: sidebar}"></div>
       </div>
 
-      <div class="sm:pl-64 pt-20" style="height: 1000px">
+      <!-- <div class="sm:pl-64 pt-20" style="height: 1000px">
         <div class="flex justify-center flex-col items-center">
           <h1 class="text-5xl">Welcome to Dashbaord page</h1>
           <p>
@@ -26,7 +26,17 @@
             Consequatur, ratione!
           </p>
         </div>
-      </div>
+      </div> -->
+      <div class="sm:pl-64 pt-60 ">
+        <div class="max-w-4xl mx-auto text-center">
+              <h1 class="text-3xl sm:text-9xl font-bold mb-4">Welcome back, <span th:text="${loggedInUser.name}">User</span> 👋</h1>
+              <p class="text-lg text-gray-600">Stay connected. Stay organized. Stay ahead.</p>
+              <blockquote class="mt-6 italic text-purple-700 text-sm sm:text-base">
+                  “Great things are done by a series of small things brought together.” – Vincent van Gogh
+              </blockquote>
+          </div>
+        </div>
+
     </div>
 
     <script>

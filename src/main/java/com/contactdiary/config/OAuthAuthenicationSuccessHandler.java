@@ -1,6 +1,5 @@
 package com.contactdiary.config;
 
-
 import java.io.IOException;
 import java.util.UUID;
 
@@ -16,14 +15,10 @@ import org.springframework.stereotype.Component;
 
 import com.contactdiary.entites.Providers;
 import com.contactdiary.entites.User;
+import com.contactdiary.helpers.AppConstants;
 import com.contactdiary.repositories.UserRepo;
 
 import java.util.List;
-
-// import com.contactdiary.entities.Providers;
-// import com.contactdiary.entities.User;
-// import com.contactdiary.helpers.AppConstants;
-// import com.contactdiary.repsitories.UserRepo;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

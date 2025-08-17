@@ -10,4 +10,13 @@ class ContactDiaryApplicationTests {
 	void contextLoads() {
 	}
 
+	// @Autowired
+	// private EmailService service;
+
+	// @Test
+	// void sendEmailTest() {
+	// 	service.sendEmail("suhailstudy92@gmail.com", "Just managing the emails",
+	// 			"this is scm project working on email service");
+	// }
+
 }
