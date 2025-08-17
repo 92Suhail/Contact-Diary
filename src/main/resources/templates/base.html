@@ -16,7 +16,40 @@
     />
     <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
     <link rel="stylesheet" data-th-href="@{'/css/style.css'}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* Make each section full-screen */
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
+    /* Background animation effect */
+    .bg-animated {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      animation: backgroundAnimation 10s ease-in-out infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-image: url('https://via.placeholder.com/1500x1000'); }
+      50% { background-image: url('https://via.placeholder.com/1500x1000/ff0000'); }
+      100% { background-image: url('https://via.placeholder.com/1500x1000/00ff00'); }
+    }
+
+    /* Adjust text color based on light/dark mode */
+    .dark-mode .text-gray-600 { color: white; }
+    .light-mode .text-gray-600 { color: black; }
+  </style>
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -50,7 +83,7 @@
 
     <!-- common footer -->
     <!-- <footer class="p-4">Footer: Learn Code With Suhail</footer> -->
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script data-th-src="@{'/js/script.js'}"></script>

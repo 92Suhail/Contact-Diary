@@ -8,99 +8,128 @@
 </head>
 <body>
 <div id="content" class="border">
-  <!-- Banner Section -->
-  <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInDown">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">Welcome to Contact Diary</h2>
-      <p class="text-lg mb-8">Manage all your contacts effortlessly and securely in one place.</p>
-      <a href="#"
-         class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get
-        Started</a>
-    </div>
-  </section>
+   <!-- Banner Section -->
+    <section 
+    class="text-grey-900 dark:text-white py-20 animate__animated animate__fadeInDown"
+    style="background-image: url('/images/img1.png'); background-size: cover; background-position: center;"
+    >
+      <div class="container mx-auto text-center relative">
+        <h2 class="text-8xl text-blue-600 dark:text-sky-400 font-bold mb-4">Welcome to Contact Diary</h2>
+        <p class="text-4xl text-white dark:text-white mb-8">Manage all your contacts effortlessly and securely in one place.</p>
+        <a data-th-href="@{'/register'}"
+           class="px-8 py-4 text-4xl rounded bg-gray-800 hover:bg-gray text-white dark:bg-blue-800 dark:hover:bg-blue-800">
+           Get Started
+        </a>
+        <div class="bg-animated"></div>
+      </div>
+    </section>
 
-  <!-- Features Section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Features</h2>
+    <!-- Features Section -->
+    
+   <section 
+    class="py-20 animate__animated animate__fadeInUp"
+    style="background-image: url('/images/img2.png'); background-size: cover; background-position: center;">
+  <div class="container mx-auto text-center relative">
+    <!-- Text container with background, rounded corners, and centered background -->
+    <div class="bg-white bg-opacity-70 dark:bg-gray-800 dark:bg-opacity-70 p-8 rounded-lg relative z-10 mx-auto max-w-4xl">
+      <h2 class="text-3xl font-bold mb-12">Features</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-          <i class="fas fa-address-book text-blue-600 text-4xl mb-4"></i>
+        <div class="p-6 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fas fa-address-book text-blue-600 dark:text-white text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Easy Contact Management</h3>
-          <p class="text-gray-600">Add, edit, and organize your contacts in a user-friendly interface.</p>
+          <p class="text-gray-600 dark:text-white">Add, edit, and organize your contacts in a user-friendly interface.</p>
         </div>
-        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-          <i class="fas fa-lock text-blue-600 text-4xl mb-4"></i>
+        <div class="p-6 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fas fa-lock text-blue-600 dark:text-white text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">Secure Storage</h3>
-          <p class="text-gray-600">Your data is protected with top-level encryption and security measures.</p>
+          <p class="text-gray-600 dark:text-white">Your data is protected with top-level encryption and security measures.</p>
         </div>
-        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-          <i class="fas fa-globe text-blue-600 text-4xl mb-4"></i>
+        <div class="p-6 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <i class="fas fa-globe text-blue-600 dark:text-white text-4xl mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">24/7 Access</h3>
-          <p class="text-gray-600">Access your contacts anytime, anywhere from any device.</p>
+          <p class="text-gray-600 dark:text-white">Access your contacts anytime, anywhere from any device.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Call to Action Section -->
-  <section class="bg-blue-600 text-white py-20 animate__animated animate__fadeInUp">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Manage Your Contacts?</h2>
-      <p class="text-lg mb-8">Sign up today and experience the easiest way to manage your contacts.</p>
+
+
+
+    <!-- Call to Action Section -->
+ <section class="text-white py-10 animate__animated animate__fadeInUp"
+         style="background-image: url('/images/img3.png'); background-size: cover; background-position: center;">
+  <div class="container mx-auto text-center relative">
+    <!-- Text container with background, rounded corners, and centered background -->
+    <div class="bg-white bg-opacity-40 dark:bg-gray-800 dark:bg-opacity-40 p-8 rounded-lg relative z-10 mx-auto max-w-4xl">
+      <h2 class="text-3xl text-gray-600 dark:text-white font-bold mb-4">Ready to Manage Your Contacts?</h2>
+      <p class="text-lg text-gray-600 dark:text-white mb-8">Sign up today and experience the easiest way to manage your contacts.</p>
       <a href="#"
-         class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Create
-        an Account</a>
+         class="px-3 py-2 rounded bg-gray-800 hover:bg-gray text-white dark:bg-blue-800 dark:hover:bg-blue-800">
+         Create an Account
+      </a>
     </div>
-  </section>
+    <div class="bg-animated"></div>
+  </div>
+</section>
 
-  <!-- Testimonials Section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">What Our Users Say</h2>
+
+
+    <!-- Testimonials Section -->
+    <section class="py-20 animate__animated animate__fadeInUp"
+    style="background-image: url('/images/img4.png'); background-size: cover; background-position: center;">
+  <div class="container mx-auto text-center relative">
+    <!-- Text container with background, rounded corners, and centered content -->
+    <div class="bg-white bg-opacity-70 dark:bg-gray-800 dark:bg-opacity-70 p-8 rounded-lg relative z-10 mx-auto max-w-4xl">
+      <h2 class="text-3xl font-bold mb-12">What Our Users Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-          <p class="text-gray-600 italic">"Contact Manager has changed the way I organize my contacts. It's
-            fast, secure, and incredibly easy to use!"</p>
+        <!-- User Testimonial 1 -->
+        <div class="p-6 bg-gray-600 dark:text-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <p class="text-green-600 dark:text-white italic">"Contact Manager has changed the way I organize my contacts. It's fast, secure, and incredibly easy to use!"</p>
           <h4 class="text-lg font-semibold mt-4">- John Doe</h4>
         </div>
-        <div class="p-6 bg-gray-100 rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
-          <p class="text-gray-600 italic">"A fantastic app with great features! I love the 24/7 access and
-            secure storage options."</p>
+        <!-- User Testimonial 2 -->
+        <div class="p-6 bg-gray-600 dark:text-white rounded shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+          <p class="text-green-600 dark:text-white italic">"A fantastic app with great features! I love the 24/7 access and secure storage options."</p>
           <h4 class="text-lg font-semibold mt-4">- Jane Smith</h4>
         </div>
       </div>
     </div>
-  </section>
+    <div class="bg-animated"></div>
+  </div>
+</section>
 
 
-  <!-- Contact Section -->
-  <section class="py-20   bg-gray-100 animate__animated animate__fadeInUp">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">Get in Touch</h2>
-      <form class="max-w-lg mx-auto">
+    <!-- Contact Section -->
+    <section class="py-20 animate__animated animate__fadeInUp"
+    style="background-image: url('/images/img5.jpg'); background-size: cover; background-position: center;">
+  <div class="container mx-auto text-center relative">
+    <!-- Text container with background, rounded corners, and centered background -->
+    <div class="bg-white bg-opacity-70 dark:bg-gray-800 dark:bg-opacity-70 p-8 rounded-lg relative z-10 mx-auto max-w-lg">
+      <h2 class="text-3xl text-gray-600 dark:text-white font-bold mb-12">Get in Touch</h2>
+      <form>
         <input type="text" placeholder="Your Name" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded">
-        <input type="email" placeholder="Your Email"
-               class="w-full px-4 py-2 mb-4 border border-gray-300 rounded">
-        <textarea placeholder="Your Message"
-                  class="w-full px-4 py-2 mb-4 border border-gray-300 rounded"></textarea>
-        <button type="submit"
-                class="bg-blue-600 text-white px-6 py-3 rounded font-semibold hover:bg-blue-700 transition duration-300">
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded">
+        <textarea placeholder="Your Message" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="px-3 py-2 rounded bg-gray-800 hover:bg-gray text-white dark:bg-blue-800 dark:hover:bg-blue-800">
           Send Message
         </button>
       </form>
     </div>
-  </section>
+    <div class="bg-animated"></div>
+  </div>
+</section>
 
-  <!-- Footer Section -->
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 Contact Diary. All rights reserved.</p>
-      <p>Follow us on <a href="#" class="text-blue-400">Facebook</a>, <a href="#"
-                                                                         class="text-blue-400">Twitter</a>, and <a
-              href="#" class="text-blue-400">Instagram</a>.</p>
-    </div>
-  </footer>
+
+    <!-- Footer Section -->
+    <footer class="py-20 animate__animated animate__fadeInUp">
+      <div class="container mx-auto text-center">
+        <h1><p>&copy; 2025 Contact Diary. All rights reserved.</p></h1>
+        <p>Follow us on <a href="#" class="text-blue-400">Linkdein</a>, <a href="#" class="text-blue-400">Github</a>, and <a href="#" class="text-blue-400">Instagram</a>.</p>
+      </div>
+    </footer>
+  
 </div>
 <script>
   console.log("Home page");
