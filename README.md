@@ -5,18 +5,15 @@ A modern, professional, and responsive contact management web application built 
 ---
 
 ## 📈 Screenshots
-## 📈 Screenshots
 
 Here’s how the UI looks:
-
+View of **Home** Page:
 ![Dashboard Screenshot](src/main/resources/static/assets/home.png)
 
-View of Login Page:
-
+View of **Login** Page:
 ![Dashboard Screenshot](src/main/resources/static/assets/login.png)
 
-View of Contact Saved Page:
-
+View of **Contact Saved** Page:
 ![Dashboard Screenshot](src/main/resources/static/assets/contact.png)
 ---
 
