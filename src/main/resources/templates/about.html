@@ -4,16 +4,57 @@
   th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
 >
   <head>
-    <title>About Page</title>
+    <title>About - ContactDiary</title>
   </head>
   <body>
-    <div id="content">
-      <h1>Welcome to about page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        ratione!
+    <div id="content" class="px-6 py-10 max-w-4xl mt-8 mx-auto text-black dark:text-white">
+      <h1 class="text-4xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">About ContactDiary</h1>
+
+      <p class="mb-6 text-lg leading-relaxed">
+        <strong>ContactDiary</strong> is a secure and smart contact management web application built using
+        <span class="text-indigo-600 dark:text-indigo-400">Spring Boot</span>, 
+        <span class="text-indigo-600 dark:text-indigo-400">Thymeleaf</span>, and 
+        <span class="text-indigo-600 dark:text-indigo-400">MySQL</span>.
+        It helps you organize, search, and manage your contacts seamlessly in the cloud.
       </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">🔐 Features</h2>
+          <ul class="list-disc list-inside text-base space-y-1">
+            <li>Create and manage user accounts with email verification</li>
+            <li>Secure login with OAuth (Google, GitHub)</li>
+            <li>Smart contact storage and search</li>
+            <li>Export contacts to Excel</li>
+            <li>Mark favorites, edit profiles, and more</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">🌐 Vision</h2>
+          <p class="text-base">
+            Our goal is to help individuals and teams manage contacts efficiently,
+            securely, and with complete control — wherever they are. Whether you're
+            a freelancer, a sales rep, or a student, ContactDiary is made for you.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">💡 Technologies Used</h2>
+        <p class="text-base">
+          Java · Spring Boot · Thymeleaf · MySQL · JDBC · Tailwind CSS · VS Code · Ubuntu
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">📫 Contact</h2>
+        <p class="text-base">
+          Have questions or feedback? Feel free to reach out via our 
+          <a href="/contact" class="text-indigo-600 dark:text-indigo-400 hover:underline">Contact Page</a>.
+        </p>
+      </div>
     </div>
+
     <script>
       console.log("about page");
     </script>

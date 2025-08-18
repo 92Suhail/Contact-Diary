@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{})}">
   <head>
-  
-    <title>
-      Services
-    </title>
+    <title>Services - ContactDiary</title>
   </head>
   <body>
-    <section id="content">
-      <h1>Welcome to services page</h1>
-      <h2>Services offered by Contact Diary</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolore assumenda rerum harum mollitia incidunt nesciunt dignissimos esse dicta reprehenderit quam, quisquam aspernatur enim consequatur accusamus, minima alias odit ducimus.<10></10>
-    </section>
+    <div id="content" class="px-6 py-10 max-w-4xl mt-8 mx-auto text-black dark:text-white">
+      <h1 class="text-4xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">
+        Our Services
+      </h1>
+      <p class="mb-8 text-lg leading-relaxed">
+        At <strong>ContactDiary</strong>, we aim to simplify how you manage your contacts securely in the cloud.
+        Whether you're an individual or a team, our services are designed to make your life easier.
+      </p>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service Card 1 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">🔐 Secure Registration & Login</h2>
+          <p class="text-base">
+            Create a secure account with email verification and login via Google or GitHub.
+          </p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">📇 Contact Management</h2>
+          <p class="text-base">
+            Add, edit, search, and delete contact details including name, phone, email, and notes.
+          </p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">⭐ Favorites & Tags</h2>
+          <p class="text-base">
+            Mark important contacts as favorites for quick access and efficient categorization.
+          </p>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">📤 Export to Excel</h2>
+          <p class="text-base">
+            Instantly export your filtered search results to an Excel file with a single click.
+          </p>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">👤 User Profile Settings</h2>
+          <p class="text-base">
+            Manage your personal profile, update your details, and control your account securely.
+          </p>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="p-6 border rounded-2xl shadow-md bg-white dark:bg-gray-800">
+          <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">☁️ Cloud Sync & Access</h2>
+          <p class="text-base">
+            Access your contacts from anywhere, on any device, safely stored in the cloud.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">🛠️ Technology Stack</h2>
+        <p class="text-base">
+          Java · Spring Boot · Thymeleaf · MySQL · Tailwind CSS · VS Code · Ubuntu
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -4,18 +4,101 @@
   th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
 >
   <head>
-    <title>Contact Us Page</title>
+    <title>Contact Us - ContactDiary</title>
   </head>
   <body>
-    <div id="content">
-      <h1>Welcome to Contact page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-        ratione!
+    <div
+      id="content"
+      class="px-6 py-10 max-w-4xl mt-8 mx-auto text-black dark:text-white"
+    >
+      <h1 class="text-4xl font-bold mb-4 text-indigo-700 dark:text-indigo-400">
+        📞 Get in Touch
+      </h1>
+      <p class="mb-8 text-lg">
+        We'd love to hear from you! Whether you have a question, feedback, or
+        just want to say hi — feel free to reach out.
       </p>
+
+      <div class="space-y-6">
+        <!-- Email -->
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">📧</span>
+          <div>
+            <h2 class="text-lg font-semibold">Email</h2>
+            <p>
+              <a
+                href="mailto:suhailraza0555@gmail.com"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline"
+              >
+                suhailrz2003@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">📱</span>
+          <div>
+            <h2 class="text-lg font-semibold">Phone</h2>
+            <p>+91-9823525525</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">💼</span>
+          <div>
+            <h2 class="text-lg font-semibold">LinkedIn</h2>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/suhail-raza/"
+                target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline"
+              >
+                linkedin.com/in/suhail-raza
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- GitHub -->
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">🐱</span>
+          <div>
+            <h2 class="text-lg font-semibold">GitHub</h2>
+            <p>
+              <a
+                href="https://github.com/92Suhail"
+                target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline"
+              >
+                github.com/92Suhail
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">📍</span>
+          <div>
+            <h2 class="text-lg font-semibold">Location</h2>
+            <p>Sasaram, Bihar, India</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-sm text-gray-500 dark:text-gray-400">
+          We'll try to respond to all queries within 24 hours. Thanks for
+          reaching out!
+        </p>
+      </div>
     </div>
+
     <script>
-      console.log("Home page");
+      console.log("Contact page");
     </script>
   </body>
 </html>
