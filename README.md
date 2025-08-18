@@ -144,8 +144,8 @@ Accessible from `/contact`, the page includes:
 
 - ✉️ Email: [suhailraza0555@gmail.com](mailto\:yourname@example.com)
 - 📲 Phone: +91-8052215997
-- 👨‍💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/suhail-raza/)
-- 💻 GitHub: [github.com/yourusername](https://github.com/92Suhail)
+- 👨‍💼 LinkedIn: [linkedin.com/in/suhail-raza](https://www.linkedin.com/in/suhail-raza/)
+- 💻 GitHub: [github.com/92Suhail](https://github.com/92Suhail)
 
 ---
 
