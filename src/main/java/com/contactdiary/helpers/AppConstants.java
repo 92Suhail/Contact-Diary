@@ -3,7 +3,7 @@ package com.contactdiary.helpers;
 
 public class AppConstants {
 
-    public static final String APP_NAME = "SCM";
+    public static final String APP_NAME = "ContactDiary";
 
     public static final String ROLE_USER = "ROLE_USER";
 

@@ -38,14 +38,14 @@ public class AuthController {
                 userRepo.save(user);
                 session.setAttribute("message", Message.builder()
                         .type(MessageType.green)
-                        .content("You email is verified. Now you can login  ")
+                        .content("Congratulation !! your email is verified. Now you can login  ")
                         .build());
                 return "success_page";
             }
 
             session.setAttribute("message", Message.builder()
                     .type(MessageType.red)
-                    .content("Email not verified ! Token is not associated with user .")
+                    .content("Ops !! Email not verified, Token is not associated with user .")
                     .build());
             return "error_page";
 
@@ -53,7 +53,7 @@ public class AuthController {
 
         session.setAttribute("message", Message.builder()
                 .type(MessageType.red)
-                .content("Email not verified ! Token is not associated with user .")
+                .content("Ops !! Email not verified, Token is not associated with user .")
                 .build());
 
         return "error_page";

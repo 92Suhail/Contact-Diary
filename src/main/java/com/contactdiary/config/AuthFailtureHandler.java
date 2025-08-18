@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 import com.contactdiary.helpers.Message;
 import com.contactdiary.helpers.MessageType;
 
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -30,7 +29,7 @@ public class AuthFailtureHandler implements AuthenticationFailureHandler {
             HttpSession session = request.getSession();
             session.setAttribute("message",
                     Message.builder()
-                            .content("User is disabled, Email with  varification link is sent on your email id !!")
+                            .content("Please Verfiy the link sent on your registered Email to activate the account !!")
                             .type(MessageType.red).build());
 
             response.sendRedirect("/login");
