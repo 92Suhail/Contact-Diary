@@ -1,5 +1,5 @@
 console.log("Contacts.js");
-const baseURL = "http://localhost:9090";
+const baseURL = "https://contact-diary-production.up.railway.app/";
 // const baseURL = "https://www.scm20.site";
 const viewContactModal = document.getElementById("view_contact_modal");
 
